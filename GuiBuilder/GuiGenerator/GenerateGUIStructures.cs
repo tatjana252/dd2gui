@@ -9,7 +9,7 @@ namespace GuiBuilder.GuiGenerator
 {
 	internal class GenerateGUIStructures
 	{
-		public static IGuiControl  CreateStructureGUI(Structure s, bool? obavezno = true)
+		public static IGuiControl  CreateStructureGUI(Structure s, bool? required = true)
 		{
 			switch (s.Composition)
 			{

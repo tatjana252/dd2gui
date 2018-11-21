@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RecnikPodataka\DataDictionary.csproj" />
+    <ProjectReference Include="..\DataDictionary\DataDictionary.csproj" />
   </ItemGroup>
 
 </Project>

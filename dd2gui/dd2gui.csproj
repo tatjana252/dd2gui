@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataDictionary\DataDictionary.csproj" />
     <ProjectReference Include="..\GuiBuilder\GuiBuilder.csproj" />
-    <ProjectReference Include="..\RecnikPodataka\DataDictionary.csproj" />
   </ItemGroup>
 
 </Project>

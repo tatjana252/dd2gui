@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratorKI", "GeneratorKI\GeneratorKI.csproj", "{319A2FB3-AE4A-448A-8FF5-517B2DA1FBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dd2gui", "dd2gui\dd2gui.csproj", "{319A2FB3-AE4A-448A-8FF5-517B2DA1FBF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44824A6B-306E-4790-BBA2-A2D80307C7CD} = {44824A6B-306E-4790-BBA2-A2D80307C7CD}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataDictionary", "RecnikPodataka\DataDictionary.csproj", "{44824A6B-306E-4790-BBA2-A2D80307C7CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataDictionary", "DataDictionary\DataDictionary.csproj", "{44824A6B-306E-4790-BBA2-A2D80307C7CD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuiBuilder", "GuiBuilder\GuiBuilder.csproj", "{2598F3D8-565E-44AF-92B8-CDC65692D682}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44824A6B-306E-4790-BBA2-A2D80307C7CD} = {44824A6B-306E-4790-BBA2-A2D80307C7CD}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

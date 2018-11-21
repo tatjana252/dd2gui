@@ -1,7 +1,7 @@
 ﻿using GuiBuilder.GuiBuilderInterface;
 using System;
 
-namespace GuiBuilder.GuiConsole
+namespace GuiBuilder.GuiHtml
 {
 	public class GuiBuilderHTML : IGuiBuilder
 	{
