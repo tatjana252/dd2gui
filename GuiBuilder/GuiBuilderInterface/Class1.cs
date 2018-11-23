@@ -12,7 +12,7 @@ namespace GuiBuilder.GuiBuilderInterface
 		{
 			foreach (var containerChildControl in container.ChildControls)
 			{
-				IGuiComponentBuilder componentBuilder = builder.CreateBuilder(containerChildControl);
+				IGuiControlBuilder componentBuilder = builder.CreateBuilder(containerChildControl);
 				if (containerChildControl is IContainer kon)
 				{
 					componentBuilder.StartTag(kon);

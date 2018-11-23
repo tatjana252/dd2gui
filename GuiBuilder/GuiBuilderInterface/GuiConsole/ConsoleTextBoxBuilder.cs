@@ -1,9 +1,10 @@
 ﻿using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleTextBoxBuilder : IGuiComponentBuilder
+	public class ConsoleTextBoxBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

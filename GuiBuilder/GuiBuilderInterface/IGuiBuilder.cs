@@ -6,6 +6,6 @@ namespace GuiBuilder.GuiBuilderInterface
 {
 	public interface IGuiBuilder
 	{
-		IGuiComponentBuilder CreateBuilder(IGuiControl control);
+		IGuiControlBuilder CreateBuilder(IGuiControl control);
 	}
 }

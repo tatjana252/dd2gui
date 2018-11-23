@@ -2,7 +2,7 @@
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleGroupboxBuilder : IGuiComponentBuilder
+	public class ConsoleGroupboxBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

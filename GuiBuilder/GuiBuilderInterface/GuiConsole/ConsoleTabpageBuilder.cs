@@ -1,13 +1,14 @@
 ﻿using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleTabpageBuilder : IGuiComponentBuilder
+	public class ConsoleTabpageBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
-		{
-			TabPage tp = control as TabPage;
+		{ 
+TabPage tp = control as TabPage;
 			foreach (var tpChildControl in tp.ChildControls)
 			{
 				new GuiBuilderConsole().CreateBuilder(tpChildControl).CreateComponentRepresentation(tpChildControl);

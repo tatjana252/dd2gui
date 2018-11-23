@@ -8,7 +8,7 @@ using GuiBuilder.GuiBuilderInterface;
 namespace GuiBuilder.GuiHtml
 {
 	
-		public class HTMLDateFieldBuilder : IGuiComponentBuilder
+		public class HTMLDateFieldBuilder : IGuiControlBuilder
 		{
 			public object CreateComponentRepresentation(IGuiControl control)
 			{

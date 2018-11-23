@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleTabControlBuilder : IGuiComponentBuilder
+	public class ConsoleTabControlBuilder : IGuiControlBuilder
 	{
 		
 		public object CreateComponentRepresentation(IGuiControl control)

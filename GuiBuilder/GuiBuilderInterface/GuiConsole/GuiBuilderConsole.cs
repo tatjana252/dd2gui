@@ -5,9 +5,9 @@ namespace GuiBuilder.GuiConsole
 {
 	public class GuiBuilderConsole : IGuiBuilder
 	{
-		public IGuiComponentBuilder CreateBuilder(IGuiControl control)
+		public IGuiControlBuilder CreateBuilder(IGuiControl control)
 		{
-			IGuiComponentBuilder builder = null;
+			IGuiControlBuilder builder = null;
 			switch (control.GetType().Name)
 			{
 				case "TextBox":

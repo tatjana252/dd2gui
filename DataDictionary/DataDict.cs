@@ -16,7 +16,7 @@ namespace DataDictionary
 
 	   
 
-	    public Structure CreateStructure(Composition composition, string v, List<IGUIComponent> komponentas)
+	    public Structure CreateStructure(Composition composition, string v, List<IComponent> komponentas)
 	    {
 		    Structure s = new Structure()
 		    {
@@ -29,7 +29,7 @@ namespace DataDictionary
 		    return s;
 	    }
 
-		public IGUIComponent CreateField(string v, Domain domain, Composition composition = Composition.Null)
+		public IComponent CreateField(string v, Domain domain, Composition composition = Composition.Null)
 		{
 			return new Field()
 			{
@@ -41,7 +41,7 @@ namespace DataDictionary
 		}
 
 
-	    public IGUIComponent CreateStructure(Composition composition, List<IGUIComponent> komponentas)
+	    public IComponent CreateStructure(Composition composition, List<IComponent> komponentas)
 	    {
 			return new Structure()
 		    {

@@ -7,7 +7,7 @@ using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleDateFieldBuilder : IGuiComponentBuilder
+	public class ConsoleDateFieldBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl p)
 		{

@@ -6,15 +6,15 @@ using DataDictionary;
 namespace DataDictionary
 
 {
-	public class Structure : IGUIComponent
+	public class Structure : IComponent
 	{
 		public string Name { get; set; }
-		public List<IGUIComponent> ComponentsList { get; set; }
+		public List<IComponent> ComponentsList { get; set; }
 		public Composition Composition { get; set; }
 		public DataDict DataDict { get; set; }
 
 
-		public Structure(string name, List<IGUIComponent> komponente, Composition composition)
+		public Structure(string name, List<IComponent> komponente, Composition composition)
 		{
 			Name = name;
 			ComponentsList = komponente;

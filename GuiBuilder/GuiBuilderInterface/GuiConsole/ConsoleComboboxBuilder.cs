@@ -1,9 +1,9 @@
 ﻿using GuiBuilder.GuiBuilderInterface;
-using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsoleComboboxBuilder : IGuiComponentBuilder
+	public class ConsoleComboboxBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

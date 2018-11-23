@@ -6,7 +6,7 @@ using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiConsole;
 
 
-namespace GuiBuilder.GuiControls
+namespace GuiBuilder.GuiControls.GuiControlsImplementation
 {
 	public class Table : IInputField
 	{

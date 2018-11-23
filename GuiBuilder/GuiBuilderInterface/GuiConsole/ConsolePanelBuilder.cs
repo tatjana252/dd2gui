@@ -3,7 +3,7 @@ using GuiBuilder.GuiBuilderInterface;
 
 namespace GuiBuilder.GuiConsole
 {
-	public class ConsolePanelBuilder : IGuiComponentBuilder
+	public class ConsolePanelBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

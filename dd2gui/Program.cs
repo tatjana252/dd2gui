@@ -16,7 +16,7 @@ namespace GeneratorKI
 			var recnik = new DataDict();
 
 			recnik.CreateStructure(
-				Composition.Aggregation, "Stavka narudzbenice", new List<IGUIComponent>
+				Composition.Aggregation, "Stavka narudzbenice", new List<IComponent>
 				{
 					recnik.CreateField("Sifra", Domain.Int),
 					recnik.CreateField("Kolicina", Domain.Int),
@@ -27,13 +27,13 @@ namespace GeneratorKI
 			recnik.CreateStructure(
 				Composition.Aggregation,
 				"Proizvod",
-				new List<IGUIComponent>
+				new List<IComponent>
 				{
 					recnik.CreateField("Sifra", Domain.Int),
 					recnik.CreateField("Name", Domain.String),
 					recnik.CreateStructure(
 						Composition.NonExclusiveSpecialization,
-						new List<IGUIComponent>
+						new List<IComponent>
 						{
 							recnik.CreateField("Opis", Domain.String),
 							recnik.CreateField("Napomena", Domain.String),
@@ -44,7 +44,7 @@ namespace GeneratorKI
 			);
 
 			recnik.CreateStructure(Composition.Aggregation, "Narudzbenica",
-				new List<IGUIComponent>
+				new List<IComponent>
 				{
 					recnik.CreateField("Sifra", Domain.Int),
 					recnik.CreateField("Date", Domain.Date),
@@ -52,22 +52,22 @@ namespace GeneratorKI
 				});
 
 			recnik.CreateStructure(Composition.Aggregation, "Kupac",
-				new List<IGUIComponent>
+				new List<IComponent>
 				{
 					recnik.CreateField("Sifra", Domain.Int),
 					recnik.CreateField("Ulica", Domain.String),
 					recnik.CreateStructure(
-						Composition.ExclusiveSpecialization, new List<IGUIComponent>
+						Composition.ExclusiveSpecialization, new List<IComponent>
 						{
 							recnik.CreateStructure(
-								Composition.Aggregation, "Pravno lice", new List<IGUIComponent>
+								Composition.Aggregation, "Pravno lice", new List<IComponent>
 								{
 									recnik.CreateField("PIB", Domain.Int),
 									recnik.CreateField("Name Firme", Domain.String),
 									recnik.CreateField("Adresa sedista", Domain.String)
 								}),
 							recnik.CreateStructure(
-								Composition.Aggregation, "Fizicko lice", new List<IGUIComponent>
+								Composition.Aggregation, "Fizicko lice", new List<IComponent>
 								{
 									recnik.CreateField("Ime", Domain.String),
 									recnik.CreateField("Prezime", Domain.String),
@@ -85,7 +85,7 @@ namespace GeneratorKI
 			{
 
 				Console.WriteLine(guiControl.Name);
-				GuiContainerBuilder.CreateGUI(guiControl, new GuiBuilderConsole());
+				CreateGUI(guiControl, new GuiBuilderConsole());
 			}
 		}
 

@@ -4,7 +4,7 @@ using System.Text;
 using GuiBuilder;
 using GuiBuilder.GuiBuilderInterface;
 
-namespace GuiBuilder.GuiControls
+namespace GuiBuilder.GuiControls.GuiControlsImplementation
 {
 	public class Groupbox : IContainer
 	{

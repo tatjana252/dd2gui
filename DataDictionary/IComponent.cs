@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 namespace DataDictionary
 {
-    public interface IGUIComponent
+    public interface IComponent
     {
 		string Name { get; set; }
 		Composition Composition { get; set; }

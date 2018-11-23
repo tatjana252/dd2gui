@@ -2,10 +2,11 @@
 using System.Linq;
 using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiHtml
 {
-	public class HTMLTabControlBuilder : IGuiComponentBuilder
+	public class HTMLTabControlBuilder : IGuiControlBuilder
 	{
 		
 		public object CreateComponentRepresentation(IGuiControl control)

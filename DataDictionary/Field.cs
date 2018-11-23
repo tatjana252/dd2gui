@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataDictionary
 {
-    public class Field : IGUIComponent
+    public class Field : IComponent
     {
 	    public string Name { get; set; }
 		public Domain Domain { get; set; }

@@ -2,7 +2,7 @@
 
 namespace GuiBuilder.GuiHtml
 {
-	public class HTMLGroupboxBuilder : IGuiComponentBuilder
+	public class HTMLGroupboxBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

@@ -3,7 +3,7 @@ using GuiBuilder.GuiBuilderInterface;
 
 namespace GuiBuilder.GuiHtml
 {
-	public class HTMLTextBoxBuilder : IGuiComponentBuilder
+	public class HTMLTextBoxBuilder : IGuiControlBuilder
 	{
 		public object CreateComponentRepresentation(IGuiControl control)
 		{

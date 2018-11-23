@@ -4,6 +4,7 @@ using System.Linq;
 using DataDictionary;
 using GuiBuilder.GuiBuilderInterface;
 using GuiBuilder.GuiControls;
+using GuiBuilder.GuiControls.GuiControlsImplementation;
 
 namespace GuiBuilder.GuiGenerator
 {
@@ -88,7 +89,7 @@ namespace GuiBuilder.GuiGenerator
 			return tabcontrol;
 		}
 
-		public static IGuiControl CreateGUI(IGUIComponent component, bool obavezno = true)
+		public static IGuiControl CreateGUI(IComponent component, bool obavezno = true)
 		{
 			switch (component)
 			{
